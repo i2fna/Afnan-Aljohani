@@ -11,8 +11,12 @@ export default function Hero() {
     <section id="hero" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Ambient background */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
-        style={{ backgroundImage: "url(/manus-storage/hero-bg_5438fbc7.png)" }}
+        className="absolute inset-0 opacity-40"
+        style={{
+          backgroundImage:
+            "radial-gradient(circle at 18% 24%, oklch(0.65 0.25 290 / 0.32), transparent 34%), radial-gradient(circle at 82% 68%, oklch(0.7 0.2 60 / 0.2), transparent 30%), linear-gradient(135deg, transparent 0 46%, oklch(0.65 0.25 290 / 0.08) 46% 47%, transparent 47% 100%)",
+          backgroundSize: "auto, auto, 52px 52px",
+        }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/70 to-background" />
 
@@ -76,7 +80,7 @@ export default function Hero() {
 
             <Reveal delay={400}>
               <div className="flex gap-3">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+                <a href="https://github.com/i2fna" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
                   className="p-3 glass-card rounded-lg text-muted-foreground hover:text-accent hover:border-accent/50 transition-all duration-300">
                   <Github size={19} />
                 </a>
@@ -106,12 +110,13 @@ export default function Hero() {
                           "radial-gradient(circle at 30% 35%, oklch(0.65 0.25 290 / 0.35), transparent 55%), radial-gradient(circle at 75% 70%, oklch(0.7 0.2 60 / 0.3), transparent 50%)",
                       }}
                     />
-                    <img
-                      src="/manus-storage/afnan-signature_a3fd4710.png"
-                      alt="Afnan Aljohani signature"
-                      className="relative w-[85%] max-w-[340px] drop-shadow-[0_0_18px_oklch(0.65_0.25_290/0.35)]"
+                    <div
+                      className="relative font-display text-5xl md:text-6xl italic font-bold tracking-tight gradient-text neon-glow -rotate-6"
                       dir="ltr"
-                    />
+                      aria-label="Afnan Aljohani"
+                    >
+                      Afnan
+                    </div>
                   </div>
                   {/* Gallery label */}
                   <div className="flex items-center justify-between px-4 py-3">
