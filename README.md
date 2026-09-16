@@ -1,6 +1,10 @@
 # Afnan Aljohani — Portfolio
 
-Bilingual Arabic/English portfolio exported from Manus. Built with React, TypeScript, Vite and Tailwind CSS.
+Bilingual Arabic/English portfolio built with React, TypeScript, Vite and Tailwind CSS.
+
+## Live website
+
+https://afnan-ai-portfolio.a-almass3dii.chatgpt.site
 
 ## أماكن التعديل
 
@@ -10,7 +14,7 @@ Bilingual Arabic/English portfolio exported from Manus. Built with React, TypeSc
 - أقسام الصفحة: `client/src/components/`
 - ترتيب الأقسام: `client/src/pages/Home.tsx`
 
-## التشغيل على جهازك
+## التشغيل محليًا
 
 Install Node.js and pnpm, then run:
 
@@ -26,8 +30,4 @@ pnpm check
 pnpm build
 ```
 
-## Important migration note
-
-The source was imported from the Manus export. Images referenced through `/manus-storage/` are not included in the ZIP and need to be recovered into `client/public/` for fully independent hosting. The Vite configuration also still includes Manus-specific development plugins. No API secrets were included.
-
-GitHub stores the source code; a public website URL requires a separate deployment step.
+GitHub stores the editable source. Updating files in GitHub does not automatically change the live website; publish a new version after the changes are ready.
